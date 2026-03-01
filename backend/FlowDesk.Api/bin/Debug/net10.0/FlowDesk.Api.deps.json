@@ -606,6 +606,7 @@
       },
       "FlowDesk.Infrastructure/1.0.0": {
         "dependencies": {
+          "FlowDesk.Domain": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "10.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.13",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"

@@ -16,4 +16,8 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FlowDesk.Domain\FlowDesk.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

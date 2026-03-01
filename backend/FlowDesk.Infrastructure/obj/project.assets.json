@@ -657,6 +657,22 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "FlowDesk.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "10.0.2"
+        },
+        "compile": {
+          "bin/placeholder/FlowDesk.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlowDesk.Domain.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -2029,10 +2045,16 @@
         "system.composition.typedparts.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "FlowDesk.Domain/1.0.0": {
+      "type": "project",
+      "path": "../FlowDesk.Domain/FlowDesk.Domain.csproj",
+      "msbuildProject": "../FlowDesk.Domain/FlowDesk.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "FlowDesk.Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.2",
       "Microsoft.EntityFrameworkCore >= 9.*",
       "Microsoft.EntityFrameworkCore.Design >= 9.*",
@@ -2070,7 +2092,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "d:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj": {
+              "projectPath": "d:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

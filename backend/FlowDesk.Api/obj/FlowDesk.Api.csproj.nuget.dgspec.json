@@ -1520,7 +1520,11 @@
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "d:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj": {
+                "projectPath": "d:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
