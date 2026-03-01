@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj": {}
+    "D:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj": {}
   },
   "projects": {
-    "d:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj": {
+    "D:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj",
+        "projectUniqueName": "D:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj",
         "projectName": "FlowDesk.Domain",
-        "projectPath": "d:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj",
+        "projectPath": "D:\\flowdesk\\backend\\FlowDesk.Domain\\FlowDesk.Domain.csproj",
         "packagesPath": "C:\\Users\\aliel\\.nuget\\packages\\",
-        "outputPath": "d:\\flowdesk\\backend\\FlowDesk.Domain\\obj\\",
+        "outputPath": "D:\\flowdesk\\backend\\FlowDesk.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

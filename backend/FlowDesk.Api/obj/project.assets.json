@@ -2464,11 +2464,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\flowdesk\\backend\\FlowDesk.Api\\FlowDesk.Api.csproj",
+      "projectUniqueName": "D:\\flowdesk\\backend\\FlowDesk.Api\\FlowDesk.Api.csproj",
       "projectName": "FlowDesk.Api",
-      "projectPath": "d:\\flowdesk\\backend\\FlowDesk.Api\\FlowDesk.Api.csproj",
+      "projectPath": "D:\\flowdesk\\backend\\FlowDesk.Api\\FlowDesk.Api.csproj",
       "packagesPath": "C:\\Users\\aliel\\.nuget\\packages\\",
-      "outputPath": "d:\\flowdesk\\backend\\FlowDesk.Api\\obj\\",
+      "outputPath": "D:\\flowdesk\\backend\\FlowDesk.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2489,11 +2489,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "d:\\flowdesk\\backend\\FlowDesk.Application\\FlowDesk.Application.csproj": {
-              "projectPath": "d:\\flowdesk\\backend\\FlowDesk.Application\\FlowDesk.Application.csproj"
+            "D:\\flowdesk\\backend\\FlowDesk.Application\\FlowDesk.Application.csproj": {
+              "projectPath": "D:\\flowdesk\\backend\\FlowDesk.Application\\FlowDesk.Application.csproj"
             },
-            "d:\\flowdesk\\backend\\FlowDesk.Infrastructure\\FlowDesk.Infrastructure.csproj": {
-              "projectPath": "d:\\flowdesk\\backend\\FlowDesk.Infrastructure\\FlowDesk.Infrastructure.csproj"
+            "D:\\flowdesk\\backend\\FlowDesk.Infrastructure\\FlowDesk.Infrastructure.csproj": {
+              "projectPath": "D:\\flowdesk\\backend\\FlowDesk.Infrastructure\\FlowDesk.Infrastructure.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bbSHJB8Ya8g=",
+  "dgSpecHash": "jbHxkcNCDXs=",
   "success": true,
-  "projectFilePath": "d:\\flowdesk\\backend\\FlowDesk.Infrastructure\\FlowDesk.Infrastructure.csproj",
+  "projectFilePath": "D:\\flowdesk\\backend\\FlowDesk.Infrastructure\\FlowDesk.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aliel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\aliel\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
