@@ -1,0 +1,17 @@
+# .Net
+backend/bin/
+backend/obj/
+backend/**/*.user
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local/
+
+# Secrets
+.env
+*.env.local
+
+# OS 
+.DS_Store
+Thumbs.db
