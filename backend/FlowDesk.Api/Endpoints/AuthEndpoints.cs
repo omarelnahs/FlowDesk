@@ -14,7 +14,10 @@ public static class AuthEndpoints
     {
         app.MapPost("/api/auth/register", Register);
         app.MapPost("/api/auth/login",    Login);
+        app.MapPost("/api/auth/oauth",    OAuthSignIn);
     }
+
+    record OAuthRequest(string Provider, string ProviderKey, string Email, string? Name, string? AvatarUrl);
 
     record RegisterRequest(string Name, string Email, string Password);
     record LoginRequest(string Email, string Password);
@@ -46,6 +49,29 @@ public static class AuthEndpoints
             return Results.Unauthorized();
 
         return Results.Ok(new AuthResponse(GenerateToken(user, config), user.Email, user.Name));
+    }
+
+    static async Task<IResult> OAuthSignIn(
+        OAuthRequest req, AppDbContext db, IConfiguration config)
+    {
+        // Find existing user by email, or create a new one
+        var user = await db.Users.FirstOrDefaultAsync(u => u.Email == req.Email.ToLower());
+
+        if (user is null)
+        {
+            user = new User
+            {
+                Email     = req.Email.ToLower(),
+                Name      = req.Name ?? req.Email,
+                AvatarUrl = req.AvatarUrl,
+                // No PasswordHash for OAuth users
+            };
+            db.Users.Add(user);
+            await db.SaveChangesAsync();
+        }
+
+        var token = GenerateToken(user, config);
+        return Results.Ok(new { userId = user.Id, accessToken = token, email = user.Email, name = user.Name });
     }
 
     static string GenerateToken(User user, IConfiguration config)
