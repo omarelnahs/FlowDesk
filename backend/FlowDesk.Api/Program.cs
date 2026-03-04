@@ -36,6 +36,9 @@ builder.Services.AddCors(o => o.AddDefaultPolicy(p =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<FlowDesk.Application.Workspaces.WorkspacesService>();
+
+
 var app = builder.Build();
 
 app.UseCors();
@@ -46,5 +49,7 @@ app.UseSwaggerUI();
 
 app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
 app.MapAuthEndpoints();    // Register & Login
+app.MapWorkspaceEndpoints();
+
 
 app.Run();

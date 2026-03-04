@@ -8,6 +8,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
     public DbSet<User>            Users            => Set<User>();
     public DbSet<Workspace>       Workspaces       => Set<Workspace>();
     public DbSet<WorkspaceMember> WorkspaceMembers => Set<WorkspaceMember>();
+    public DbSet<WorkspaceInvite> WorkspaceInvites => Set<WorkspaceInvite>();
 
     protected override void OnModelCreating(ModelBuilder mb)
     {
