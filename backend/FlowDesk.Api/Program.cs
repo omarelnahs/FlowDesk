@@ -37,7 +37,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<FlowDesk.Application.Workspaces.WorkspacesService>();
-
+builder.Services.AddScoped<FlowDesk.Application.Invites.InviteService>();
+builder.Services.AddScoped<FlowDesk.Infrastructure.Services.EmailService>();
 
 var app = builder.Build();
 
@@ -50,6 +51,6 @@ app.UseSwaggerUI();
 app.MapGet("/health", () => Results.Ok(new { status = "healthy" }));
 app.MapAuthEndpoints();    // Register & Login
 app.MapWorkspaceEndpoints();
-
+app.MapInviteEndpoints();
 
 app.Run();
